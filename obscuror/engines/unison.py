@@ -17,7 +17,7 @@ class Unison(BaseEngine):
                 pinyin_dict[char_pinyin] = {char}
         return pinyin_dict
 
-    pinyin_dic = create_pinyin_dict(0x4E00, 0x9FD5)
+    pinyin_dic = create_pinyin_dict.__get__(object)(0x4E00, 0x9FD5)
 
     @staticmethod
     def replace_rare_char(text, pinyin_dict, count=1):

@@ -10,8 +10,8 @@
 
 ## 依赖
 
-- Python 3.7+
-- pypinyin~=0.49.0
+- Python 3.6+
+- pypinyin~=0.50.0
 
 ## 快速使用
 

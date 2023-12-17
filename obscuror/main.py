@@ -1,11 +1,12 @@
 """File: main.py    Author: 顾平安"""
 import importlib
+from typing import Dict, Type
 from .exceptions import *
 from .engines import BaseEngine
 
 
 class obscuror(object):
-    __engines: dict[str:BaseEngine] = {}
+    __engines: Dict[str, Type[BaseEngine]] = {}
 
     def __init__(self, text, count, mode: str = 'append', shield: bool = True):
         self.text = str(text)
